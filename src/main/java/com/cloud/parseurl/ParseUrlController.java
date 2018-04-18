@@ -14,6 +14,8 @@ import java.util.Map;
 @RequestMapping(value = "/")
 public class ParseUrlController {
 
+    static String url = "https://cns.api.qcloud.com/v2/index.php?Action=RecordModify";
+
     @RequestMapping(value = "/parse", method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
     public String parseUrl(@RequestParam Map<String, String> map) {
